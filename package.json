@@ -1,0 +1,42 @@
+{
+  "name": "zephcode-css",
+  "version": "1.0.0",
+  "description": "A modern and lightweight CSS framework",
+  "module": "dist/zephcode.esm.js",
+  "style": "dist/zephcode.css",
+  "main": "dist/zephcode.bundle.js",
+  "scripts": {
+    "clean": "del-cli dist/*",
+    "build:css": "postcss src/css/main.css -o dist/zephcode.css --no-map",
+    "build:css:min": "postcss dist/zephcode.css --use cssnano -o dist/zephcode.min.css --no-map",
+    "build:js": "rollup -c",
+    "build": "npm run clean && npm run build:css && npm run build:js",
+    "start": "vite"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "zephcode",
+    "responsive",
+    "modern"
+  ],
+  "author": "BRI",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "del-cli": "^6.0.0",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "rollup": "^4.29.1",
+    "vite": "^6.0.6"
+  },
+  "browserslist": [
+    ">1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

@@ -1,0 +1,58 @@
+/* Variabel Global */
+:root {
+    --zc-primary: #007bff;
+    --zc-secondary: #6c757d;
+    --zc-success: #28a745;
+    --zc-danger: #dc3545;
+    --zc-warning: #ffc107;
+  }
+  
+  /* Reset CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Button Styles */
+  .zc-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(--zc-primary);
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .zc-btn:hover {
+    background-color: var(--zc-secondary);
+  }
+  
+  /* Alert Styles */
+  .zc-alert {
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .zc-alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  .zc-alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
